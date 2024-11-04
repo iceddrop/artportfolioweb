@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "ArtGRid",
+    path: "ArtGrid",
     element: <ArtGrid />,
   },
 ]);
