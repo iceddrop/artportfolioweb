@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -9,6 +8,7 @@ import {
 import Homepage from './pages/Homepage/Homepage.jsx';
 import ErrorPage from './pages/Errorpage/Errorpage.jsx';
 import ArtGrid from './pages/Homepage/PageOverview/ArtGrid.jsx';
+import PageOverview from './pages/Homepage/PageOverview/PageOverview.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     path: "ArtGrid",
     element: <ArtGrid />,
   },
+  {
+    path: "ArtOverview",
+    element: <PageOverview/>,
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
